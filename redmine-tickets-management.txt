@@ -1,6 +1,6 @@
 II.  Bug/Task workflow chart in internal project
 
-1. Tất cả công việc cần làm (Task/Feature/Bug/Support) phải được tạo ticket trước rồi mới thực hiện. Ticket cần có description rõ ràng.
+1. Tất cả công việc cần làm (Task/Bug/Feature/Support) phải được tạo ticket trước rồi mới thực hiện. Ticket cần có description rõ ràng.
 Nếu ticket không được implement trong sprint hiện tại thì chuyển về "Product Backlog" (Cần tạo 1 target version là Product Backlog).
 2. Dev nghiên cứu ticket
 - Nếu cần thảo luận thêm (ví dụ bug log sai logic, không tái hiện được bug...) thì chuyển trạng thái sang "Feedback" và assign cho QA
