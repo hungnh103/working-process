@@ -1,0 +1,28 @@
+II.  Bug/Task workflow chart in internal project
+
+1. Tất cả công việc cần làm (Bug/Task/Feature/Support) phải được tạo ticket trước rồi mới thực hiện. Lưu ý ticket cần có description rõ ràng.
+Nếu ticket không được implement trong sprint hiện tại thì chuyển ticket về Product backlog ( Nên tạo 1 target version là product backlog)
+2. Dev nghiên cứu 	ticket
+- Chuyển về trạng thái "Feedback” nếu cần thảo luận thêm về ticket ( Ví dụ bug log sai logic, không tái hiện được bug…), assign cho QA
+- Nếu không cần discuss thêm hoặc đã discuss xong thì chuyển về trạng thái “Inprogress”
+3. Dev update ticket, 
+- Update đầy đủ thông tin Start date, Due date, Estimated time, 
+- Chuyển trạng thái sang "In Progress"
+- Assign cho chính mình.
+4. Nếu đúng là bug, vẫn giữ trạng thái “In progress”, Dev fix xong, tạo pull request
+- Comment link pull request đó vào ticket
+- Chuyển % Done thành 90 %
+- Update Spent time 
+- Chuyển trạng thái ticket sang Reviewing
+5. Dev gửi pull cho cả team cùng review
+    - Pull request phải có approved của ít nhất 2 người mới được merge.
+    - Trường hợp có comment, cần sửa pull request thì quay lại bước 3.
+6. Khi pull được merged,
+- Dev update % Done của ticket thành 100 %,
+7. Leader deploy chức năng lên server test (staging)
+  Dev test lại trên server staging:
+- Nếu test pass, chuyển trạng thái ticket sang Resolved, Assign ticket cho QA
+- Nếu test fail, tự investigate và quay lại bước 2
+8. QA nhận ticket và thực hiện test
+- Nếu pass thì comment vào ticket và chuyển sang trạng thái Closed
+- Nếu fail thì comment vào ticket và chuyển sang trạng thái Reopened, assign lại cho Dev
