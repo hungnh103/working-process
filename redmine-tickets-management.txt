@@ -8,7 +8,7 @@ Nếu ticket không được implement trong sprint hiện tại thì chuyển v
 3. Dev update ticket
 - Assign cho chính mình
 - Chuyển trạng thái "In Progress"
-- Điền đầy đủ thông tin Target version, Start date, Due date, Estimated time rồi bắt đầu implement t
+- Điền đầy đủ thông tin Target version, Start date, Due date, Estimated time rồi bắt đầu implement ticket
 4. Dev làm xong, tạo pull request và update những mục sau của ticket
 - Pull request links (một ticket có thể cần nhiều pull request để giải quyết)
 - Chuyển % Done thành 90 %
